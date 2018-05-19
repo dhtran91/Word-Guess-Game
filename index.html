@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Word Guess Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    
+
 </head>
-<body>
-    <h1>Word Guess Game : Games of Throne Trivia</h1>
-    <p>Wins: <span id="win"></span></p>
-    <p>Losses: <span id="loss"></span></p>
-    <p>Lives: <span id="life"></span></p>
-    <p>
-        <span id="word"></span>
-    </p>
+
+<body style="background: url('https://www.australianetworknews.com/wp-content/uploads/2016/06/game-of-thrones-1349.jpg') no-repeat fixed; background-size: cover;">
     
-    <p>Letter already guessed: <span id="guessedLetter"></span></p>
+
+    <div id="id01" class="container-fluid modal">
+        <div class=" container" id="id02">
+            <div class="row modal-content">
+                <div class="col-md-12">
+                    <h1>Word Guess Game : Games of Throne Trivia</h1>
+                </div>
+
+            </div>
+            <div class="row modal-content">
+                <div class="col-md-12">
+                    <p>Wins:
+                        <span id="win"></span>
+                    </p>
+                    <p>Losses:
+                        <span id="loss"></span>
+                    </p>
+                    <p>Lives:
+                        <span id="life"></span>
+                    </p>
+                    <p>
+                        <span id="word"></span>
+                    </p>
+                    <p>Letter already guessed:
+                        <span id="guessedLetter"></span>
+                    </p>
+
+                    <button id="play-again" class="btn-lg" style="visibility: hidden;" onclick="gamesOfThroneGame.reset()">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class = "btn-lg btn-block" onclick="document.getElementById('id01').style.display='block';">Click Here to Play!</button>
+
 
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
